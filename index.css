@@ -1,11 +1,3 @@
-body {
-  color: #2c3e50;
-}
-
-.clicked {
-  color: #7f8c8d;
-}
-
 .form,
 .greetings {
   display: none;
@@ -23,6 +15,28 @@ body {
     opacity: 1;
   }
 }
+ul {
+  width: 400px;
+  text-align: center;
+  padding: 0;
+}
+li {
+  list-style: none;
+  font-size: 25px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-weight: 600;
+}
+
+button {
+  color: white;
+  border: none;
+  background: none;
+  text-shadow: 1px 1px 2px black;
+}
+button:focus {
+  outline: none;
+}
 .bgImage {
   position: absolute;
   top: 0;
@@ -31,4 +45,69 @@ body {
   height: 100%;
   z-index: -1;
   animation: fadeIn 0.5s linear;
+}
+
+.wrapper {
+  margin-top: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.js-clock {
+}
+.js-clock h1 {
+  color: white;
+  font-size: 100px;
+  text-shadow: 1px 1px 2px black;
+  margin: 0 0;
+}
+
+.js-form,
+.js-toDoForm {
+  padding: 20px 20px;
+}
+.js-toDoForm {
+  margin-top: 20px;
+}
+.js-form input,
+.js-toDoForm input {
+  border: none;
+  border-bottom: 1.3px solid white;
+  width: 300px;
+  height: 40px;
+  background: none;
+  font-size: 25px;
+  text-shadow: 1px 1px 2px black;
+}
+
+.js-form input:focus,
+.js-toDoForm input:focus {
+  outline: none;
+  color: white;
+}
+
+.js-form input::placeholder,
+.js-toDoForm input::placeholder {
+  color: white;
+  text-align: center;
+  font-weight: 600;
+}
+.js-greetings {
+  margin-top: 0;
+  margin-bottom: 0px;
+  color: white;
+  font-size: 40px;
+  text-shadow: 1px 1px 2px black;
+}
+.js-weather {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-size: 20px;
+  font-weight: 600;
+}
+.weather {
+  position: absolute;
+  top: 20px;
+  right: 20px;
 }
